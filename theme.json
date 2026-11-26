@@ -1,1 +1,95 @@
-
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "custom": false,
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "palette": [
+        { "slug": "principale", "name": "Principale", "color": "#257A4B" },
+        { "slug": "principale-survol", "name": "Principale au survol", "color": "#1C603A" },
+        { "slug": "fond", "name": "Fond", "color": "#E1F2E8" },
+        { "slug": "surface", "name": "Surface", "color": "#FFFFFF" },
+        { "slug": "texte", "name": "Texte et bordure", "color": "#383838" },
+        { "slug": "erreur", "name": "Erreur", "color": "#B33B36" }
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "defaultFontSizes": false,
+      "fluid": false,
+      "fontFamilies": [
+        {
+          "slug": "titres",
+          "name": "Titres — Nunito",
+          "fontFamily": "\"Nunito\", sans-serif"
+        },
+        {
+          "slug": "texte",
+          "name": "Texte — Inter",
+          "fontFamily": "\"Inter\", sans-serif"
+        }
+      ],
+      "fontSizes": [
+        { "slug": "legende", "name": "Légende", "size": "0.75rem" },
+        { "slug": "surtitre", "name": "Surtitre", "size": "0.875rem" },
+        { "slug": "texte", "name": "Texte courant", "size": "1rem" },
+        { "slug": "introduction", "name": "Introduction", "size": "1.125rem" },
+        { "slug": "titre-secondaire", "name": "Titre secondaire", "size": "1.25rem" },
+        { "slug": "titre-principal", "name": "Titre principal", "size": "1.75rem" },
+        { "slug": "titre-section-desktop", "name": "Titre de section desktop", "size": "2rem" },
+        { "slug": "titre-principal-desktop", "name": "Titre principal desktop", "size": "3.25rem" }
+      ]
+    },
+    "spacing": {
+      "customSpacingSize": false,
+      "defaultSpacingSizes": false,
+      "spacingScale": {
+        "steps": 0
+      },
+      "units": ["rem"],
+      "spacingSizes": [
+        { "slug": "rapproche", "name": "Éléments rapprochés", "size": "0.5rem" },
+        { "slug": "contenu", "name": "Espacement du contenu", "size": "1rem" },
+        { "slug": "carte", "name": "Intérieur des cartes", "size": "1.5rem" },
+        { "slug": "section", "name": "Espacement des sections", "size": "2rem" }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var:preset|color|fond",
+      "text": "var:preset|color|texte"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|texte",
+      "fontSize": "var:preset|font-size|texte",
+      "fontWeight": "400",
+      "lineHeight": "1.5"
+    },
+    "elements": {
+      "heading": {
+        "color": {
+          "text": "var:preset|color|principale"
+        },
+        "typography": {
+          "fontFamily": "var:preset|font-family|titres",
+          "fontWeight": "800"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var:preset|color|principale",
+          "text": "var:preset|color|surface"
+        },
+        "typography": {
+          "fontFamily": "var:preset|font-family|texte",
+          "fontSize": "var:preset|font-size|texte",
+          "fontWeight": "700",
+          "lineHeight": "1.5"
+        }
+      }
+    }
+  }
+}
