@@ -1,0 +1,261 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "custom": false,
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "palette": [
+        {
+          "slug": "principale",
+          "name": "Principale",
+          "color": "#257A4B"
+        },
+        {
+          "slug": "principale-survol",
+          "name": "Principale au survol",
+          "color": "#1C603A"
+        },
+        {
+          "slug": "fond",
+          "name": "Fond",
+          "color": "#E1F2E8"
+        },
+        {
+          "slug": "surface",
+          "name": "Surface",
+          "color": "#FFFFFF"
+        },
+        {
+          "slug": "texte",
+          "name": "Texte et bordure",
+          "color": "#383838"
+        },
+        {
+          "slug": "erreur",
+          "name": "Erreur",
+          "color": "#B33B36"
+        }
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "defaultFontSizes": false,
+      "fluid": false,
+      "fontFamilies": [
+        {
+          "slug": "titres",
+          "name": "Titres — Nunito",
+          "fontFamily": "\"Nunito\", sans-serif"
+        },
+        {
+          "slug": "texte",
+          "name": "Texte — Inter",
+          "fontFamily": "\"Inter\", sans-serif"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "legende",
+          "name": "Légende",
+          "size": "0.75rem"
+        },
+        {
+          "slug": "surtitre",
+          "name": "Surtitre",
+          "size": "0.875rem"
+        },
+        {
+          "slug": "texte",
+          "name": "Texte courant",
+          "size": "1rem"
+        },
+        {
+          "slug": "introduction",
+          "name": "Introduction",
+          "size": "1.125rem"
+        },
+        {
+          "slug": "titre-secondaire",
+          "name": "Titre secondaire",
+          "size": "1.25rem"
+        },
+        {
+          "slug": "titre-principal",
+          "name": "Titre principal",
+          "size": "1.75rem"
+        },
+        {
+          "slug": "titre-section-desktop",
+          "name": "Titre de section desktop",
+          "size": "2rem"
+        },
+        {
+          "slug": "titre-principal-desktop",
+          "name": "Titre principal desktop",
+          "size": "3.25rem"
+        },
+        {
+          "slug": "action-desktop",
+          "name": "Action principale desktop",
+          "size": "1.25rem"
+        },
+        {
+          "slug": "logotype",
+          "name": "Logotype",
+          "size": "1.5rem"
+        }
+      ]
+    },
+    "spacing": {
+      "customSpacingSize": false,
+      "defaultSpacingSizes": false,
+      "spacingScale": {
+        "steps": 0
+      },
+      "units": [
+        "rem"
+      ],
+      "spacingSizes": [
+        {
+          "slug": "rapproche",
+          "name": "Éléments rapprochés",
+          "size": "0.5rem"
+        },
+        {
+          "slug": "contenu",
+          "name": "Espacement du contenu",
+          "size": "1rem"
+        },
+        {
+          "slug": "carte",
+          "name": "Intérieur des cartes",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "section",
+          "name": "Espacement des sections",
+          "size": "2rem"
+        }
+      ]
+    },
+    "custom": {
+      "bordure": {
+        "largeur": "1px",
+        "style": "solid"
+      },
+      "focus": {
+        "largeur": "3px",
+        "decalage": "3px"
+      },
+      "mouvement": {
+        "zoomCarte": 1.02,
+        "duree": "180ms",
+        "courbe": "ease-out"
+      },
+      "carte": {
+        "rayon": "1rem",
+        "bordure": "0.1875rem",
+        "hauteur-min": "14.5rem",
+        "largeur-min": "18rem",
+        "taille-repere": "2.5rem",
+        "rayon-repere": "0.5rem",
+        "taille-cercle": "5rem",
+        "taille-icone": "3.5rem",
+        "interligne-titre": "1.4",
+        "interligne-numero": "1.285714",
+        "graisse-titre": "800",
+        "zero": "0"
+      },
+      "hero": {
+        "espacement": "3rem",
+        "rayon": "1rem",
+        "ratio-image": "5 / 3",
+        "colonnes": "minmax(0, 2fr) minmax(0, 3fr)",
+        "colonne-mobile": "minmax(0, 1fr)",
+        "interligne-titre-mobile": "1.285714",
+        "interligne-titre-desktop": "1.115385",
+        "interligne-introduction": "1.555556",
+        "graisse-action": "700",
+        "largeur-bouton": "23.625rem",
+        "rayon-bouton": "0.5rem"
+      },
+      "structure": {
+        "hauteur-entete": "5rem",
+        "hauteur-pied": "4rem",
+        "taille-icone": "1.5rem",
+        "graisse-navigation": "700",
+        "zero": "0",
+        "rayon-navigation": "0.5rem"
+      },
+      "icones": {
+        "feuille": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3.99999%2020C-5.72205e-06%208%209.99999%203%2021%203C21%2015%2015%2023%203.99999%2020ZM3.99999%2020L17%207%22%2F%3E%3C%2Fsvg%3E\")",
+        "accueil": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3%2010L12%203L21%2010V20H3V10Z%22%2F%3E%3Cpath%20d%3D%22M9%2020V13H15V20%22%2F%3E%3C%2Fsvg%3E\")",
+        "impact": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M4%2020V11M10%2020V6M16%2020V3M22%2020H2%22%2F%3E%3C%2Fsvg%3E\")",
+        "conseils": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M9.00001%2018H15M9.00001%2021H15M8.00001%2015C1.00001%208%207.00001%202%2012%202C17%202%2023%208%2016%2015H8.00001Z%22%2F%3E%3C%2Fsvg%3E\")",
+        "defis": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M7%204H17C18.1046%204%2019%204.89543%2019%206V20C19%2021.1046%2018.1046%2022%2017%2022H7C5.89543%2022%205%2021.1046%205%2020V6C5%204.89543%205.89543%204%207%204Z%22%2F%3E%3Cpath%20d%3D%22M9%204V2H15V4M8%2010L10%2012L15%207M8%2017H16%22%2F%3E%3C%2Fsvg%3E\")",
+        "progres": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3%2016L9%2010L14%2014L21%205M21%2010V5H16%22%2F%3E%3C%2Fsvg%3E\")"
+      }
+    },
+    "layout": {
+      "wideSize": "78rem"
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var:preset|color|fond",
+      "text": "var:preset|color|texte"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|texte",
+      "fontSize": "var:preset|font-size|texte",
+      "fontWeight": "400",
+      "lineHeight": "1.5"
+    },
+    "elements": {
+      "heading": {
+        "color": {
+          "text": "var:preset|color|principale"
+        },
+        "typography": {
+          "fontFamily": "var:preset|font-family|titres",
+          "fontWeight": "800"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var:preset|color|principale",
+          "text": "var:preset|color|surface"
+        },
+        "typography": {
+          "fontFamily": "var:preset|font-family|texte",
+          "fontSize": "var:preset|font-size|texte",
+          "fontWeight": "700",
+          "lineHeight": "1.5"
+        }
+      }
+    }
+  },
+  "customTemplates": [
+    {
+      "name": "eco-accueil",
+      "title": "Accueil Éco-citoyen — sans titre automatique",
+      "postTypes": [
+        "page"
+      ]
+    }
+  ],
+  "templateParts": [
+    {
+      "name": "eco-header",
+      "title": "En-tête Éco-citoyen",
+      "area": "header"
+    },
+    {
+      "name": "eco-footer",
+      "title": "Pied de page Éco-citoyen",
+      "area": "footer"
+    }
+  ]
+}

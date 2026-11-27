@@ -65,7 +65,7 @@ Les composants seront conçus d'abord pour mobile, puis adaptés à la tablette 
 | Logo, icônes et images propres au thème | Ressources rangées dans `assets/img/` | Centraliser les ressources nécessaires au thème |
 | Images ajoutées dans les pages | Médiathèque WordPress ; fichiers optimisés et textes alternatifs adaptés | Illustrer les contenus tout en maîtrisant le poids des pages |
 
-Le thème parent déclaré dans le dépôt est Twenty Twenty-Five (`Template: twentytwentyfive`). Le thème enfant existant est « Projet Digital Child ». Les réglages prévus dans `theme.json` devront être mis en place et vérifiés avec cette base.
+Le thème parent est Twenty Twenty-Five (`Template: twentytwentyfive`). Le thème enfant est « eco-citoyen child ». Les tokens sont déclarés dans `theme.json`, les composants sont stylés dans `assets/css/components/` et le modèle de l’Accueil utilise les parties de modèle du dossier `parts/`.
 
 ## 6. Gestion des états de l'interface
 
@@ -132,3 +132,17 @@ La génération de défis par IA reste une possibilité à discuter. Pour prépa
 | Performance | Optimiser les images, limiter les extensions et utiliser au maximum deux familles de polices. |
 | Sécurité et IA | Protéger les données des utilisateurs, ne pas mettre de mots de passe ou de clés d’API sur GitHub et appeler l’IA depuis le serveur. |
 | Organisation et collaboration | Ranger clairement les fichiers, travailler avec des branches et des Pull Requests, puis mettre le site sur le serveur de l’école. |
+
+
+## 10. Atelier DFEF #3/4 — justification des moyens de personnalisation
+
+Les couleurs, polices, tailles de texte et espacements sont centralisés dans `theme.json` pour maintenir un socle cohérent et limiter les choix manuels.
+Le contenu de l’Accueil est construit avec les blocs natifs de Gutenberg pour que le client puisse modifier les textes et les images sans coder.
+Les fichiers de `assets/css/components/` réutilisent les tokens pour personnaliser les cartes, l’introduction et la structure commune, y compris le survol, le focus et le responsive.
+Les compositions de `patterns/` fournissent les sections réutilisables ; `templates/eco-accueil.html` organise la page et `parts/` contient l’en-tête et le pied de page.
+Les blocs natifs sont privilégiés à Bootstrap pour conserver les outils d’édition WordPress, limiter les dépendances et faciliter la maintenance par le client.
+
+### Périmètre livré
+
+Cette étape couvre uniquement le socle graphique et l’Accueil. Les autres pages et fonctionnalités décrites plus haut restent prévues pour la suite du projet.
+La reproduction de la page et les éléments de vérification sont détaillés dans [installation-accueil.md](installation-accueil.md).

@@ -1,0 +1,160 @@
+.wp-block-group.eco-card {
+  box-sizing: border-box;
+  transition: transform var(--wp--custom--mouvement--duree) var(--wp--custom--mouvement--courbe);
+  min-width: min-content;
+  padding: var(--wp--preset--spacing--carte);
+  background-color: var(--wp--preset--color--surface);
+  color: var(--wp--preset--color--texte);
+  border-width: var(--wp--custom--bordure--largeur);
+  border-style: var(--wp--custom--bordure--style);
+  border-color: var(--wp--preset--color--texte);
+}
+
+.wp-block-group.eco-card .wp-block-heading {
+  font-family: var(--wp--preset--font-family--titres);
+  font-size: var(--wp--preset--font-size--titre-secondaire);
+  line-height: normal;
+  color: var(--wp--preset--color--principale);
+  overflow-wrap: anywhere;
+}
+
+.wp-block-group.eco-card p,
+.wp-block-group.eco-card .wp-block-button__link {
+  font-family: var(--wp--preset--font-family--texte);
+  font-size: var(--wp--preset--font-size--texte);
+}
+
+.wp-block-group.eco-card .wp-block-button__link:hover {
+  background-color: var(--wp--preset--color--principale-survol);
+  color: var(--wp--preset--color--surface);
+}
+
+.wp-block-group.eco-card:focus-visible,
+.wp-block-group.eco-card a:focus-visible,
+.wp-block-group.eco-card button:focus-visible {
+  outline-width: var(--wp--custom--focus--largeur);
+  outline-style: var(--wp--custom--bordure--style);
+  outline-color: var(--wp--preset--color--principale);
+  outline-offset: var(--wp--custom--focus--decalage);
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .wp-block-group.eco-card:hover {
+    transform: scale(var(--wp--custom--mouvement--zoom-carte));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wp-block-group.eco-card {
+    transition: none;
+    transform: none;
+  }
+}
+
+.eco-page-main .wp-block-group.eco-how-it-works {
+  max-width: var(--wp--style--global--wide-size);
+  margin-inline: auto;
+}
+
+.wp-block-group.eco-how-it-works > .wp-block-group.eco-steps {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  max-width: none;
+  gap: var(--wp--preset--spacing--carte);
+}
+
+.wp-block-group.eco-card.eco-card--step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--wp--preset--spacing--contenu);
+  min-width: var(--wp--custom--carte--zero);
+  min-height: var(--wp--custom--carte--hauteur-min);
+  border-width: var(--wp--custom--carte--bordure);
+  border-radius: var(--wp--custom--carte--rayon);
+  text-align: center;
+}
+
+.wp-block-group.eco-card.eco-card--step > * {
+  margin-block: var(--wp--custom--carte--zero);
+}
+
+.wp-block-group.eco-card.eco-card--step .wp-block-heading {
+  color: var(--wp--preset--color--texte);
+  font-weight: var(--wp--custom--carte--graisse-titre);
+  line-height: var(--wp--custom--carte--interligne-titre);
+}
+
+.wp-block-group.eco-card.eco-card--step p {
+  line-height: inherit;
+}
+
+.wp-block-group.eco-card.eco-card--step .eco-step-number {
+  position: absolute;
+  inset-block-start: var(--wp--preset--spacing--rapproche);
+  inset-inline-start: var(--wp--preset--spacing--rapproche);
+  display: grid;
+  place-items: center;
+  width: var(--wp--custom--carte--taille-repere);
+  height: var(--wp--custom--carte--taille-repere);
+  border-radius: var(--wp--custom--carte--rayon-repere);
+  background: var(--wp--preset--color--principale);
+  color: var(--wp--preset--color--surface);
+  font-family: var(--wp--preset--font-family--titres);
+  font-size: var(--wp--preset--font-size--titre-principal);
+  font-weight: var(--wp--custom--carte--graisse-titre);
+  line-height: var(--wp--custom--carte--interligne-numero);
+}
+
+.eco-card--step .eco-step-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: var(--wp--custom--carte--zero);
+  width: var(--wp--custom--carte--taille-cercle);
+  height: var(--wp--custom--carte--taille-cercle);
+  border-radius: var(--wp--custom--carte--taille-cercle);
+  background: var(--wp--preset--color--fond);
+  color: var(--wp--preset--color--principale);
+}
+
+.eco-card--step .eco-step-icon svg {
+  display: block;
+  width: var(--wp--custom--carte--taille-icone);
+  height: var(--wp--custom--carte--taille-icone);
+}
+
+.eco-how-it-works .eco-steps-title {
+  text-align: center;
+  color: var(--wp--preset--color--texte);
+  font-family: var(--wp--preset--font-family--titres);
+  font-size: var(--wp--preset--font-size--titre-section-desktop);
+  font-weight: var(--wp--custom--carte--graisse-titre);
+  line-height: inherit;
+  margin-block-end: var(--wp--preset--spacing--section);
+}
+
+
+@media (min-width: 40rem) {
+  .wp-block-group.eco-how-it-works > .wp-block-group.eco-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .wp-block-group.eco-steps > .wp-block-group.eco-card--step:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    inline-size: calc((100% - var(--wp--preset--spacing--carte)) / 2);
+    justify-self: center;
+  }
+}
+
+@media (min-width: 64rem) {
+  .wp-block-group.eco-how-it-works > .wp-block-group.eco-steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .wp-block-group.eco-steps > .wp-block-group.eco-card--step:last-child:nth-child(odd) {
+    grid-column: auto;
+    inline-size: auto;
+    justify-self: stretch;
+  }
+}
