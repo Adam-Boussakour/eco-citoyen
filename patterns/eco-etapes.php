@@ -7,8 +7,8 @@
  * Keywords: eco, étapes, accueil, cartes
  */
 ?>
-<!-- wp:group {"tagName":"section","className":"eco-how-it-works","layout":{"type":"constrained"}} -->
-<section class="wp-block-group eco-how-it-works">
+<!-- wp:group {"tagName":"section","align":"wide","className":"eco-how-it-works","layout":{"type":"default"}} -->
+<section class="wp-block-group alignwide eco-how-it-works">
 <!-- wp:heading {"className":"eco-steps-title"} -->
 <h2 class="wp-block-heading eco-steps-title">Comment ça marche ?</h2>
 <!-- /wp:heading -->
