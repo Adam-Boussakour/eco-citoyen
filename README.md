@@ -45,3 +45,22 @@ Projet-Digital/
 
 
 
+
+
+## Atelier DFEF #3/4 — socle graphique et Accueil
+
+Cette livraison porte sur la page Accueil uniquement. La page Mon impact reste à réaliser.
+
+- `theme.json` : palette, typographies, espacements et tokens des composants.
+- `assets/css/components/card.css` : cartes, grille, survol, focus et centrage de la dernière carte en tablette.
+- `assets/css/components/hero.css` : introduction, bouton principal et image responsive.
+- `assets/css/components/site-chrome.css` : en-tête, navigation, menu mobile et pied de page.
+- `functions.php` : chargement des styles, des polices et du JavaScript.
+- `patterns/eco-accueil-introduction.php` et `patterns/eco-etapes.php` : compositions réutilisables.
+- `templates/eco-accueil.html` : modèle de l’Accueil sans titre automatique.
+- `parts/eco-header.html` et `parts/eco-footer.html` : parties de modèle communes.
+- `assets/img/accueil-velo.jpg` : image optimisée avec un texte alternatif dans la composition.
+- `docs/fiche-technique.md` : choix techniques et cinq lignes de justification de l’atelier.
+
+Voir les [instructions d’installation et de reproduction de l’Accueil](docs/installation-accueil.md).
+La vérification responsive en 375, 768 et 1280 px a été signalée comme terminée par Adam ; les captures et la relecture de la pull request restent à joindre au dépôt ou à la remise.
